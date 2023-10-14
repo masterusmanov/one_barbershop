@@ -668,6 +668,17 @@ a {
   text-align: center;
   margin-bottom: 50px;
 }
+.youtube-title-text1 {
+  font-size: 18px;
+  color: rgb(225, 225, 225);
+  text-align: center;
+}
+
+.youtube-title-text2 {
+  font-size: 18px;
+  color: rgb(225, 225, 225);
+  text-align: center;
+}
 
 .youtube-wrapper {
   display: -webkit-box;
