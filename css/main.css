@@ -421,6 +421,47 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.headers{
+  display: flex;
+  justify-content: space-between;
+}
+/* Style for the dropdown button */
+.dropbtn {
+  background-color: #3e51f8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 83px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Show the dropdown content when the dropdown button is clicked */
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-top: 12px;
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
 
 @media only screen and (max-width: 600px) {
   .site-logo {
