@@ -417,7 +417,7 @@ a {
 .site-header {
   padding-top: 50px;
   padding-bottom: 140px;
-  background-image: url(../images/web_bg_8.png);
+  background-image: url(../images/web_bg_16.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -468,7 +468,7 @@ a {
     margin: 0 auto;
   }
   .site-header {
-    background-image: url("../images/home_bg9.png");
+    background-image: url("../images/home_bg13.png");
   }
 }
 .hero-title {
@@ -590,25 +590,18 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  .youtube-wrapper {
-    /* display: flex;
+  /* .youtube-wrapper {
+    display: grid;
     justify-content: center;
-    gap: 50px; */
+    gap: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  
-  .img1{
-    width: 250px;
-    border-radius: 10px;
-  }
+    border: 1px solid white;
 
-  .img2{
-    width: 250px;
-    border-radius: 10px;
-  }
+  } */
+   
 
   .youtube-text {
     font-size: 18px;
@@ -616,6 +609,8 @@ a {
     min-width: 290px;
     margin-bottom: 20px;
   }
+
+  
   .youtube-video {
     width: auto;
   }
@@ -648,7 +643,7 @@ a {
 .download-phone-img {
   width: 700px;
   margin-right: 70px;
-  background-image: url("../images/mockup2.png");
+  background-image: url("../images/mockup4.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: calc(50% - 20px) calc(50% + 10px);
@@ -748,6 +743,18 @@ a {
   text-transform: uppercase;
 }
 
+.aboute-titles{
+  width: 500px;
+  display: grid;
+  justify-content: center;
+}
+
+.about-title{
+  height: 300px;
+}
+
+
+
 .youtube-title-text {
   font-size: 18px;
   color: rgb(225, 225, 225);
@@ -755,15 +762,17 @@ a {
   margin-bottom: 50px;
 }
 .youtube-title-text1 {
-  font-size: 18px;
   color: rgb(225, 225, 225);
   text-align: center;
 }
 
 .youtube-title-text2 {
-  font-size: 18px;
   color: rgb(225, 225, 225);
   text-align: center;
+}
+
+.youtube-title-text3 {
+  color: rgb(225, 225, 225);
 }
 
 .youtube-wrapper {
@@ -850,10 +859,9 @@ a {
 }
 
 .comfort-text {
-  margin-right: auto;
+  /* margin-right: auto; */
   margin-bottom: 70px;
   margin-left: auto;
-  width: 90%;
   font-size: 20px;
   text-align: center;
   color: white;
@@ -872,7 +880,8 @@ a {
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: center;
+          gap: 20px;
 }
 
 .comfort-item {
@@ -898,6 +907,7 @@ a {
 }
 
 .comfort-item-text {
+  width: 400px;
   margin-top: 30px;
   color: white;
   text-align: center;
@@ -1028,4 +1038,18 @@ a {
     align-items: center;
     animation: pulse 1s infinite;
   }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
 }
