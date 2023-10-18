@@ -1053,3 +1053,15 @@ a {
 .container {
   padding: 2px 16px;
 }
+
+@keyframes phoneAnimation {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
