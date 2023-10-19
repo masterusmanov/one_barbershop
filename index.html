@@ -14,24 +14,471 @@
 </head>
 <body>
   <!-- Site header start -->
-  
-  <header class="site-header">
-    <div class="container">
-      <div class="headers">
-      <img class="site-logo" src="images/barbershop_logo.png" alt="site logo" />
-      <div class="dropdown">
-        <a href="#" class="dropbtn">Язык</a>
-        <div class="dropdown-content">
-            <a href="./pages/uzb.html">Uzb</a>
-            <a href="./pages/eng.html">Eng</a>
+  <div class="dropdown absolute bg-blue-500 mt-10 mr-[10px]  rounded-xl" style="right: 0">
+    <select id="languageSelector" class="text-white bg-blue-500 py-1 px-2 text-[14px]">
+      <option value="rus">Русский</option>
+      <option value="uzb">Uzbek</option>
+      <option value="eng">English</option>
+    </select>
+  </div>
+  <!-- language rus -->
+  <div id="content-rus">
+    <header class="site-header">
+      <div class="container">
+        <div class="headers">
+        <img class="site-logo" src="images/barbershop_logo.png" alt="site logo" />
+        <!-- <div class="dropdown">
+          <select id="languageSelector" class="text-red-600">
+            <option value="rus">Русский</option>
+            <option value="uzb">Uzbek</option>
+            <option value="eng">English</option>
+          </select> -->
+          <!-- <a href="#" class="dropbtn">Язык</a>
+          <div class="dropdown-content">
+              <a href="./pages/uzb.html">Uzb</a>
+              <a href="./pages/eng.html">Eng</a>
+          </div> -->
+        <!-- </div> -->
+        </div>
+        <h1 class="hero-title">
+          барбершоп
+        </h1>
+        <div class="button-box">
+          <a class="hero-booked" href="https://t.me/sad1kovs" target="_blank">Записаться онлайн</a>
+        </div>
+        <div class="w-[350px]  md:text-white mt-10 absolute mt-[50px]">
+          <h2 class="animate-bounce text-center text-[32px] font-bold">+998908079782</h2>
         </div>
       </div>
+    </header>
+    
+    <!-- Site header finish -->
+    
+    <!-- Site main start -->
+    
+    <main>
+      <section class="download">
+        <div class="container">
+          <div class="download-wrapper">
+            <div class="download-phone-img"></div>
+            <div class="download-box">
+              <h2 class="download-title">
+                Установите специальное мобильное приложение для удобной
+                онлайн-записи
+              </h2>
+              <a
+              class="download-link"
+              href="#"
+              target="_blank"
+              >Google Play</a
+              >
+              <a
+              class="download-link download-link-ios"
+              href="#"
+              target="_blank"
+              >Apple Store</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="youtube">
+        <div class="container container-y">
+          <h2 class="youtube-title">ONE барбершоп</h2>
+          <p class="youtube-title-text">с твоим характером</p>
+          <div class="grid justify-center grid-col-2 gap-10 lg:hidden">
+            <div class="grid place-items-center">
+              <img class="w-[400px] rounded-xl" src="./images/IMG_2625.png" alt="" >
+              <div class="grid place-items-center gap-2 my-5">
+                <p class="youtube-title-text1 ">Шoхрух</p>
+                <p class="youtube-title-text2">БАРБЕР</p>
+                <p class="youtube-title-text3 text-[12px] md:text-[14px] text-center">Меня зовут Шохрух. Мне 27 лет. В настоящее время работаю парикмахером. До прихода в эту сферу я работал в разных сферах, но не видел своего будущего в других профессиях. Я нашла свое место в парикмахерской профессии и увидела свое будущее. Мой приход в эту отрасль был случайным: я учился, расчесывая и стричь военнослужащих во время службы в армии, и заинтересовался этой отраслью. Я начал работать, не имея достаточного опыта в этой сфере, и в результате сильного интереса и постоянной работы над собой стал квалифицированным парикмахером текущего уровня.</p>
+              </div>
+            </div>
+            <div class="grid place-items-center">
+              <img class="w-[400px] rounded-xl" src="./images/IMG_2637 (2).png" alt="" >
+              <div class="grid place-items-center gap-2 my-5">
+                <p class="youtube-title-text1">Сирожиддин</p>
+                <p class="youtube-title-text2">БАРБЕР</p>
+                <p class="youtube-title-text3 text-[12px] md:text-[14px] text-center">Я Сироджиддин, начал заниматься этой сферой, когда мне было 16 лет. Вначале я начал учиться у хорошего учителя, и на тот момент эта профессия меня не интересовала, но со временем мой интерес вырос, и это стало моей любимой работой. Мой дядя – главная причина, по которой я пришел в эту сферу.</p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:flex justify-center item-center gap-14">
+            <div class="card">
+              <img src="./images/IMG_2625.png" alt="Avatar" class="rounded-xl" style="width:100%">
+              <div class="container my-2">
+                <h4 class="youtube-title-text1">Шoхрух</b></h4> 
+                <p class="youtube-title-text2 my-2">БАРБЕР</p>
+                <p class="youtube-title-text3 text-center">Меня зовут Шохрух. Мне 27 лет. В настоящее время работаю парикмахером. До прихода в эту сферу я работал в разных сферах, но не видел своего будущего в других профессиях. Я нашла свое место в парикмахерской профессии и увидела свое будущее. Мой приход в эту отрасль был случайным: я учился, расчесывая и стричь военнослужащих во время службы в армии, и заинтересовался этой отраслью. Я начал работать, не имея достаточного опыта в этой сфере, и в результате сильного интереса и постоянной работы над собой стал квалифицированным парикмахером текущего уровня.</p> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/IMG_2637 (2).png" alt="Avatar" class="rounded-xl" style="width:100%">
+              <div class="container my-2">
+                <h4 class="youtube-title-text1">Сирожиддин</></h4> 
+                <p class="youtube-title-text2 my-2">БАРБЕР</p>
+                <p class="youtube-title-text3 text-center">Я Сироджиддин, начал заниматься этой сферой, когда мне было 16 лет. Вначале я начал учиться у хорошего учителя, и на тот момент эта профессия меня не интересовала, но со временем мой интерес вырос, и это стало моей любимой работой. Мой дядя – главная причина, по которой я пришел в эту сферу.</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="book-button">
+        <a href="https://t.me/sad1kovs" target="_blank" class="btn-book">Записатся онлайн</a>
       </div>
+      
+      <section class="comfort">
+        <div class="container mx-auto">
+          <div class="comfort-text text-center">
+            ONE Barbershop - Это место, где Вам помогут найти свой собственный,
+            неповторимый стиль. Стоит довериться мастерам Тіте один раз, и,
+            поверьте, новый образ не оставит Вас ранодушным. Мужские стрижки и
+            опасное бритье - это наш профиль, и мы уверены, что наши барберы
+            делают это лучше всех. Как сказал однажды знаменитый Ральф Лорен:
+            «Какой бы Вы образ жизни ни вели, у вас должен быть свой собственный
+            стиль, свой собственный мир». Обещать, конечно, что мы сделаем из
+            Вас Кэри Гранта мы не будем, но Вы можете быть уверены в 3-х вещах:
+          </div>
+          <ul class="comfort-list mt-10">
+            <li class="comfort-item">
+              <img src="images/service_4.png" alt="coffee" class="image" />
+              <p class="comfort-item-text">
+                ВАМ ОБЯЗАТЕЛЬНО ПРЕДІОЖАТ ЧАШЕЧКУ АРОМАТНОГО КОфЕ ИЛИ ЧАЯ
+              </p>
+            </li>
+            <li class="comfort-item">
+              <img src="images/service_5.png" alt="coffee" class="image"/>
+              <p class="comfort-item-text">
+                МЫ ПОСТРИЖЕМ И ПОБРЕЕМ ВАС НА ВЫСШЕМ УРОВНЕ ПО ВСЕМ ЕВРОПЕЙСКИМ
+                ТРАДИЦИЯМ
+              </p>
+            </li>
+            <li class="comfort-item">
+              <img src="images/service_6.png" alt="coffee" class="image"/>
+              <p class="comfort-item-text">
+                ВЫ НЕ УСПЕЕТЕ ЗАМЕТИТЬ, КАК СНОВА ЗАХОТИТЕ ВЕРНУТЬСЯ В НАШ
+                БАРБЕРШОП
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <div class="fixed-button">
+      <a href="https://t.me/sad1kovs" id="animated-button">Записаться онлайн</a>
+    </div>
+    
+    <!-- Site main finish -->
+    
+    <!-- Site footer start -->
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="price-wrapper">
+          <div class="price">
+            <h2 class="price-title">Наши сервисы</h2>
+            <div class="price-item">
+              <p class="price-text">Стрижка волос</p>
+              <p class="price-text">70.000 - 100.000 сум</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Стрижка Бороди</p>
+              <p class="price-text">50.000 сум</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Моделирование бороди</p>
+              <p class="price-text">100.000 сум</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Королевское бритё</p>
+              <p class="price-text">100.000 сум</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Депиляция контра бороди</p>
+              <p class="price-text">50.000 сум</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Обшая Депиляция бороди</p>
+              <p class="price-text">100.000 сум</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Чистак лица</p>
+              <p class="price-text">50.000 - 100.000 сум</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Укладка</p>
+              <p class="price-text">50.000 - 100.000 сум</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Окантовка</p>
+              <p class="price-text">50.000 сум</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Децкая стрижка до 10 лет </p>
+              <p class="price-text">50.000 сум</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">с 10 лет</p>
+              <p class="price-text">70.000 сум</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Рисунок</p>
+              <p class="price-text">25.000 - 50.000 сум</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Папа+син 20% скидка</p>
+              <p class="price-text">150.000 сум</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about">
+          Разработчик COSINUS<br>
+          © ONE Barbershop <span id="currentYear"></span> все права защищены
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- uzb -->
+  <div id="content-uzb">
+    <header class="site-header">
+      <div class="container">
+          <div class="headers">
+              <img class="site-logo" src="../images/barbershop_logo.png" alt="site logo" />
+              <!-- <div class="dropdown">
+                <select id="languageSelector" class="text-red-600">
+                  <option value="uzb">Uzbek</option>
+                  <option value="rus">Русский</option>
+                  <option value="eng">English</option>
+                </select> -->
+                <!-- <a href="#" class="dropbtn">Til</a>
+                <div class="dropdown-content">
+                    <a href="../index.html">Rus</a>
+                    <a href="./eng.html">Eng</a>
+                </div> -->
+              <!-- </div> -->
+              </div>
+        <h1 class="hero-title">
+          barbershop
+        </h1>
+        <div class="button-box">
+          <a class="hero-booked" href="https://t.me/sad1kovs" target="_blank">Onlayn ro'yxatdan o'ting</a>
+        </div>
+        <div class="w-[350px]  md:text-white mt-10 absolute mt-[50px]">
+          <h2 class="animate-bounce text-center text-[32px] font-bold">+998908079782</h2>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Site header finish -->
+    
+    <!-- Site main start -->
+    
+    <main>
+      <section class="download">
+        <div class="container">
+          <div class="download-wrapper">
+            <div class="download-phone-img"></div>
+            <div class="download-box">
+              <h2 class="download-title">
+                  Qulay onlayn ro'yxatdan o'tish uchun maxsus mobil ilovani o'rnating
+              </h2>
+              <a
+              class="download-link"
+              href="#"
+              target="_blank"
+              >Google Play</a
+              >
+              <a
+              class="download-link download-link-ios"
+              href="#"
+              target="_blank"
+              >Apple Store</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="youtube">
+        <div class="container container-y">
+          <h2 class="youtube-title">ONE barbershop</h2>
+          <p class="youtube-title-text">Xodimlar</p>
+          <div class="grid justify-center grid-col-2 gap-10 lg:hidden">
+            <div class="grid place-items-center">
+              <img class="w-[400px] rounded-xl" src="../images/IMG_2625.png" alt="" >
+              <div class="grid place-items-center gap-2 my-5">
+                <p class="youtube-title-text1 ">SHOXRUH</p>
+                <p class="youtube-title-text2">SARTAROSH</p>
+                <p class="youtube-title-text3 text-[12px] md:text-[14px] text-center">Mening ismim Shoxrux. Yoshim 27 da. Hozirda  sartaroshlik kasbida faoliyat yuritaman. Men bu sohaga  kirib kelishimdan oldin turli hil sohalarda ishlaganman, ammo boshqa turdagi kasblarda o’z kelajagimni koʻra olmaganman . Men sartaroshlik kasbida o'z o’rnimni topdim va  kelajagimni koʻra oldim . Mening bu sohaga kirib kelishim tasodifiy bo'lgan:  ya’ni muddatli harbiy xizmatini oʻtashga borgan vaqtimda harbiy xizmatdagi askarlarning sochini turmaklash va kaltalash orqali o’rganib olganman va bu sohaga menda qiziqish uygʻongan. Bu sohada yetarli tajribam bo’lmasligiga qaramay ishlashni boshladim va kuchli qiziqishim, o’z ustimda tinimsiz ishlashlarim natijasida hozirgi darajadagi mohir sartaroshga aylandim.</p>
+              </div>
+            </div>
+            <div class="grid place-items-center">
+              <img class="w-[400px] rounded-xl" src="../images/IMG_2637 (2).png" alt="" >
+              <div class="grid place-items-center gap-2 my-5">
+                <p class="youtube-title-text1">SIROJIDDIN</p>
+                <p class="youtube-title-text2">SARTAROSH</p>
+                <p class="youtube-title-text3 text-[12px] md:text-[14px] text-center">Mening ismim Sirojiddin bu sohaga kirib kelishim 16 yoshimda boshlangan. Boshlanishida yaxshi ustozga shogird tushish asosida oʻrganishni boshlaganman va bu paytda menda bu kasbga qiziqish boʻlmagan, ammo vaqt oʻtgani sayin qiziqishim oshdi va sevimli ishimga aylandi . Bu sohaga kirib kelishimga asosiy sababchi mening amakim hisoblanadi.</p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:flex justify-center item-center gap-14">
+            <div class="card">
+              <img src="../images/IMG_2625.png" alt="Avatar" class="rounded-xl" style="width:100%">
+              <div class="container my-2">
+                <h4 class="youtube-title-text1">SHOXRUH</b></h4> 
+                <p class="youtube-title-text2 my-2">SARTAROSH</p>
+                <p class="youtube-title-text3 text-center">Mening ismim Shoxrux. Yoshim 27 da. Hozirda  sartaroshlik kasbida faoliyat yuritaman. Men bu sohaga  kirib kelishimdan oldin turli hil sohalarda ishlaganman, ammo boshqa turdagi kasblarda o’z kelajagimni koʻra olmaganman . Men sartaroshlik kasbida o'z o’rnimni topdim va  kelajagimni koʻra oldim . Mening bu sohaga kirib kelishim tasodifiy bo'lgan:  ya’ni muddatli harbiy xizmatini oʻtashga borgan vaqtimda harbiy xizmatdagi askarlarning sochini turmaklash va kaltalash orqali o’rganib olganman va bu sohaga menda qiziqish uygʻongan. Bu sohada yetarli tajribam bo’lmasligiga qaramay ishlashni boshladim va kuchli qiziqishim, o’z ustimda tinimsiz ishlashlarim natijasida hozirgi darajadagi mohir sartaroshga aylandim.</p> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="../images/IMG_2637 (2).png" alt="Avatar" class="rounded-xl" style="width:100%">
+              <div class="container my-2">
+                <h4 class="youtube-title-text1">SIROJIDDIN</></h4> 
+                <p class="youtube-title-text2 my-2">SARTAROSH</p>
+                <p class="youtube-title-text3 text-center">Mening ismim Sirojiddin bu sohaga kirib kelishim 16 yoshimda boshlangan. Boshlanishida yaxshi ustozga shogird tushish asosida oʻrganishni boshlaganman va bu paytda menda bu kasbga qiziqish boʻlmagan, ammo vaqt oʻtgani sayin qiziqishim oshdi va sevimli ishimga aylandi . Bu sohaga kirib kelishimga asosiy sababchi mening amakim hisoblanadi.</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="book-button">
+        <a href="https://t.me/sad1kovs" target="_blank" class="btn-book">Onlayn ro'yxatdan o'ting</a>
+      </div>
+      
+      <section class="comfort">
+        <div class="container mx-auto">
+          <div class="comfort-text">
+              ONE Barbershop - Bu sizning o'ziga xos uslubingizni topishga yordam beradigan joy. Siz Tita ustalariga bir marta ishonishingiz kerak va menga ishoning, yangi tasvir sizni iliqlik bilan tark etmaydi. Erkaklar soch turmagi va yaqin soqol olish bizning ixtisosimiz bo'lib, sartaroshlarimiz buni eng yaxshi qilishiga ishonchimiz komil. Mashhur Ralf Lauren aytganidek: "Qaysi turmush tarzini olib borishdan qat'i nazar, sizning o'z uslubingiz, o'z dunyongiz bo'lishi kerak". Albatta, biz Keri Grantni sizdan chiqaramiz deb va'da qilmaymiz, lekin siz 3 narsaga amin bo'lishingiz mumkin:
+          </div>
+          <ul class="comfort-list mt-10">
+            <li class="comfort-item">
+              <img src="../images/service_4.png" alt="coffee" class="image" />
+              <p class="comfort-item-text">
+                  SIZGA ALBATTA BIR PIYOLA XUSHBOYLI KOFE YOKI CHOY TAQDIM ETILADI
+              </p>
+            </li>
+            <li class="comfort-item">
+              <img src="../images/service_5.png" alt="coffee" class="image"/>
+              <p class="comfort-item-text">
+                BARCHA YEVROPA AN'ANALARIGA MUVOFIQ ENG YUQORI DARAJADAGI TURMAKLASH VA SOQOL OLISH
+              </p>
+            </li>
+            <li class="comfort-item">
+              <img src="../images/service_6.png" alt="coffee" class="image"/>
+              <p class="comfort-item-text">
+                SIZ BIR MARTA SOCH-SOQOL OLDIRGANINGIZDAN SO'NG, KEYINGI SAFAR ALBATTA SHU YERGA QAYTA KELISHNI HOXLAYSIZ
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <div class="fixed-button">
+      <a href="https://t.me/sad1kovs" id="animated-button">Onlayn ro'yxatdan o'tish</a>
+    </div>
+    
+    <!-- Site main finish -->
+    
+    <!-- Site footer start -->
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="price-wrapper">
+          <div class="price">
+            <h2 class="price-title">Bizning xizmatlarimiz</h2>
+            <div class="price-item">
+              <p class="price-text">Soch kesish</p>
+              <p class="price-text">70.000 - 100.000 so'm</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Soqol soch turmagi</p>
+              <p class="price-text">50.000 so'm</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Soqolni modellashtirish</p>
+              <p class="price-text">100.000 so'm</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Qirol soqol</p>
+              <p class="price-text">100.000 so'm</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Soqol depilatsiyalash</p>
+              <p class="price-text">50.000 so'm</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Umumiy soqol depilyatsiyasi</p>
+              <p class="price-text">100.000 so'm</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Yuzlarni tozalash</p>
+              <p class="price-text">50.000 - 100.000 so'm</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Ukladka</p>
+              <p class="price-text">50.000 - 100.000 so'm</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Kantofka qilish</p>
+              <p class="price-text">50.000 so'm</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">10 yoshgacha bo'lgan bolalarning soch turmagi</p>
+              <p class="price-text">50.000 so'm</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">10 yoshdan boshlab</p>
+              <p class="price-text">70.000 so'm</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Chizma</p>
+              <p class="price-text">25.000 - 50.000 so'm</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text">Ota+o'g'il 20% chegirma</p>
+              <p class="price-text">150.000 so'm</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about">
+          COSINUS tomonidan ishlab chiqilgan<br>
+          © ONE Barbershop <span id="currentYear"></span> barcha huquqlar himoyalangan
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- eng -->
+  <div id="content-eng">
+    <header class="site-header">
+    <div class="container">
+        <div class="headers">
+            <img class="site-logo" src="../images/barbershop_logo.png" alt="site logo" />
+            <!-- <div class="dropdown">
+              <select id="languageSelector" class="text-red-600">
+                <option value="eng">English</option>
+                <option value="rus">Русский</option>
+                <option value="uzb">Uzbek</option>
+              </select> -->
+              <!-- <a href="#" class="dropbtn">Lang</a>
+              <div class="dropdown-content">
+                  <a href="../index.html">Rus</a>
+                  <a href="./uzb.html">Uzb</a>
+              </div> -->
+            <!-- </div> -->
+            </div>
       <h1 class="hero-title">
-        барбершоп
+        barbershop
       </h1>
       <div class="button-box">
-        <a class="hero-booked" href="https://t.me/sad1kovs" target="_blank">Записаться онлайн</a>
+        <a class="hero-booked" href="https://t.me/sad1kovs" target="_blank"> Sign up online</a>
       </div>
       <div class="w-[350px]  md:text-white mt-10 absolute mt-[50px]">
         <h2 class="animate-bounce text-center text-[32px] font-bold">+998908079782</h2>
@@ -50,8 +497,7 @@
           <div class="download-phone-img"></div>
           <div class="download-box">
             <h2 class="download-title">
-              Установите специальное мобильное приложение для удобной
-              онлайн-записи
+              Install a special mobile application for convenient online registration
             </h2>
             <a
             class="download-link"
@@ -72,41 +518,41 @@
     
     <section class="youtube">
       <div class="container container-y">
-        <h2 class="youtube-title">ONE барбершоп</h2>
-        <p class="youtube-title-text">с твоим характером</p>
+        <h2 class="youtube-title">ONE barbershop</h2>
+        <p class="youtube-title-text">Employees</p>
         <div class="grid justify-center grid-col-2 gap-10 lg:hidden">
           <div class="grid place-items-center">
-            <img class="w-[400px] rounded-xl" src="./images/IMG_2625.png" alt="" >
+            <img class="w-[400px] rounded-xl" src="../images/IMG_2625.png" alt="" >
             <div class="grid place-items-center gap-2 my-5">
-              <p class="youtube-title-text1 ">Шoхрух</p>
-              <p class="youtube-title-text2">БАРБЕР</p>
-              <p class="youtube-title-text3 text-[12px] md:text-[14px] text-center">Меня зовут Шохрух. Мне 27 лет. В настоящее время работаю парикмахером. До прихода в эту сферу я работал в разных сферах, но не видел своего будущего в других профессиях. Я нашла свое место в парикмахерской профессии и увидела свое будущее. Мой приход в эту отрасль был случайным: я учился, расчесывая и стричь военнослужащих во время службы в армии, и заинтересовался этой отраслью. Я начал работать, не имея достаточного опыта в этой сфере, и в результате сильного интереса и постоянной работы над собой стал квалифицированным парикмахером текущего уровня.</p>
+              <p class="youtube-title-text1 ">SHOXRUH</p>
+              <p class="youtube-title-text2">BARBER</p>
+              <p class="youtube-title-text3 text-[12px] md:text-[14px] text-center">My name is Shoxrux. I am 27 years old. I am currently working as a Barber. Before entering this field, I worked in various fields, but I could not see my future in other types of professions. I found my place in the barber profession and could see my future. My entry into this industry was accidental: I learned by combing and cutting the hair of servicemen during my military service, and I became interested in this sphere. I started working despite not having enough experience in this field, and as a result of my strong interest and constant work on myself, I became a skilled  barber at the current level.</p>
             </div>
           </div>
           <div class="grid place-items-center">
-            <img class="w-[400px] rounded-xl" src="./images/IMG_2637 (2).png" alt="" >
+            <img class="w-[400px] rounded-xl" src="../images/IMG_2637 (2).png" alt="" >
             <div class="grid place-items-center gap-2 my-5">
-              <p class="youtube-title-text1">Сирожиддин</p>
-              <p class="youtube-title-text2">БАРБЕР</p>
-              <p class="youtube-title-text3 text-[12px] md:text-[14px] text-center">Я Сироджиддин, начал заниматься этой сферой, когда мне было 16 лет. Вначале я начал учиться у хорошего учителя, и на тот момент эта профессия меня не интересовала, но со временем мой интерес вырос, и это стало моей любимой работой. Мой дядя – главная причина, по которой я пришел в эту сферу.</p>
+              <p class="youtube-title-text1">SIROJIDDIN</p>
+              <p class="youtube-title-text2">BARBER</p>
+              <p class="youtube-title-text3 text-[12px] md:text-[14px] text-center">My name is Sirojiddin, started entering this field when I was 16 years old. In the beginning, I started learning by apprenticing to a good teacher, and at that time I had no interest in this profession, but as time went by, my interest grew and it became my favorite job. My uncle is the main reason why I entered this field.</p>
             </div>
           </div>
         </div>
         <div class="hidden lg:flex justify-center item-center gap-14">
           <div class="card">
-            <img src="./images/IMG_2625.png" alt="Avatar" class="rounded-xl" style="width:100%">
+            <img src="../images/IMG_2625.png" alt="Avatar" class="rounded-xl" style="width:100%">
             <div class="container my-2">
-              <h4 class="youtube-title-text1">Шoхрух</b></h4> 
-              <p class="youtube-title-text2 my-2">БАРБЕР</p>
-              <p class="youtube-title-text3 text-center">Меня зовут Шохрух. Мне 27 лет. В настоящее время работаю парикмахером. До прихода в эту сферу я работал в разных сферах, но не видел своего будущего в других профессиях. Я нашла свое место в парикмахерской профессии и увидела свое будущее. Мой приход в эту отрасль был случайным: я учился, расчесывая и стричь военнослужащих во время службы в армии, и заинтересовался этой отраслью. Я начал работать, не имея достаточного опыта в этой сфере, и в результате сильного интереса и постоянной работы над собой стал квалифицированным парикмахером текущего уровня.</p> 
+              <h4 class="youtube-title-text1">SHOXRUH</b></h4> 
+              <p class="youtube-title-text2 my-2">BARBER</p>
+              <p class="youtube-title-text3 text-center">My name is Shoxrux. I am 27 years old. I am currently working as a Barber. Before entering this field, I worked in various fields, but I could not see my future in other types of professions. I found my place in the barber profession and could see my future. My entry into this industry was accidental: I learned by combing and cutting the hair of servicemen during my military service, and I became interested in this sphere. I started working despite not having enough experience in this field, and as a result of my strong interest and constant work on myself, I became a skilled  barber at the current level.</p> 
             </div>
           </div>
           <div class="card">
-            <img src="./images/IMG_2637 (2).png" alt="Avatar" class="rounded-xl" style="width:100%">
+            <img src="../images/IMG_2637 (2).png" alt="Avatar" class="rounded-xl" style="width:100%">
             <div class="container my-2">
-              <h4 class="youtube-title-text1">Сирожиддин</></h4> 
-              <p class="youtube-title-text2 my-2">БАРБЕР</p>
-              <p class="youtube-title-text3 text-center">Я Сироджиддин, начал заниматься этой сферой, когда мне было 16 лет. Вначале я начал учиться у хорошего учителя, и на тот момент эта профессия меня не интересовала, но со временем мой интерес вырос, и это стало моей любимой работой. Мой дядя – главная причина, по которой я пришел в эту сферу.</p> 
+              <h4 class="youtube-title-text1">SIROJIDDIN</></h4> 
+              <p class="youtube-title-text2 my-2">BARBER</p>
+              <p class="youtube-title-text3 text-center">My name is Sirojiddin, started entering this field when I was 16 years old. In the beginning, I started learning by apprenticing to a good teacher, and at that time I had no interest in this profession, but as time went by, my interest grew and it became my favorite job. My uncle is the main reason why I entered this field.</p> 
             </div>
           </div>
         </div>
@@ -114,40 +560,31 @@
     </section>
     
     <div class="book-button">
-      <a href="https://t.me/sad1kovs" target="_blank" class="btn-book">Записатся онлайн</a>
+      <a href="https://t.me/sad1kovs" target="_blank" class="btn-book">Sign up online</a>
     </div>
     
     <section class="comfort">
       <div class="container mx-auto">
-        <div class="comfort-text text-center">
-          ONE Barbershop - Это место, где Вам помогут найти свой собственный,
-          неповторимый стиль. Стоит довериться мастерам Тіте один раз, и,
-          поверьте, новый образ не оставит Вас ранодушным. Мужские стрижки и
-          опасное бритье - это наш профиль, и мы уверены, что наши барберы
-          делают это лучше всех. Как сказал однажды знаменитый Ральф Лорен:
-          «Какой бы Вы образ жизни ни вели, у вас должен быть свой собственный
-          стиль, свой собственный мир». Обещать, конечно, что мы сделаем из
-          Вас Кэри Гранта мы не будем, но Вы можете быть уверены в 3-х вещах:
+        <div class="comfort-text">
+            ONE Barbershop - This is a place where they will help you find your own, unique style. You should trust the masters of Tita once, and, believe me, the new image will not leave you warm-hearted. Men's haircuts and close shaving are our specialty, and we are confident that our barbers do it the best. As the famous Ralph Lauren once said: “No matter what lifestyle you lead, you must have your own style, your own world.” Of course, we won’t promise that we will make Cary Grant out of you, but you can be sure of 3 things:
         </div>
         <ul class="comfort-list mt-10">
           <li class="comfort-item">
-            <img src="images/service_4.png" alt="coffee" class="image" />
+            <img src="../images/service_4.png" alt="coffee" class="image" />
             <p class="comfort-item-text">
-              ВАМ ОБЯЗАТЕЛЬНО ПРЕДІОЖАТ ЧАШЕЧКУ АРОМАТНОГО КОфЕ ИЛИ ЧАЯ
+              YOU WILL BE SURE TO BE PRESENTED WITH A CUP OF FLAVORED COFFEE OR TEA
             </p>
           </li>
           <li class="comfort-item">
-            <img src="images/service_5.png" alt="coffee" class="image"/>
+            <img src="../images/service_5.png" alt="coffee" class="image"/>
             <p class="comfort-item-text">
-              МЫ ПОСТРИЖЕМ И ПОБРЕЕМ ВАС НА ВЫСШЕМ УРОВНЕ ПО ВСЕМ ЕВРОПЕЙСКИМ
-              ТРАДИЦИЯМ
+              WE WILL CUT AND SHAVE YOU AT THE HIGHEST LEVEL ACCORDING TO ALL EUROPEAN TRADITIONS
             </p>
           </li>
           <li class="comfort-item">
-            <img src="images/service_6.png" alt="coffee" class="image"/>
+            <img src="../images/service_6.png" alt="coffee" class="image"/>
             <p class="comfort-item-text">
-              ВЫ НЕ УСПЕЕТЕ ЗАМЕТИТЬ, КАК СНОВА ЗАХОТИТЕ ВЕРНУТЬСЯ В НАШ
-              БАРБЕРШОП
+              BEFORE YOU KNOW IT, YOU WILL WANT TO COME BACK TO OUR BARBERSHOP.
             </p>
           </li>
         </ul>
@@ -155,7 +592,7 @@
     </section>
   </main>
   <div class="fixed-button">
-    <a href="https://t.me/sad1kovs" id="animated-button">Записаться онлайн</a>
+    <a href="https://t.me/sad1kovs" id="animated-button">Sign up online</a>
   </div>
   
   <!-- Site main finish -->
@@ -166,68 +603,69 @@
     <div class="container">
       <div class="price-wrapper">
         <div class="price">
-          <h2 class="price-title">Наши сервисы</h2>
+          <h2 class="price-title">Our services</h2>
           <div class="price-item">
-            <p class="price-text">Стрижка волос</p>
-            <p class="price-text">70.000 - 100.000 сум</p>
+            <p class="price-text">Haircut</p>
+            <p class="price-text">70.000 - 100.000 sum</p>
           </div>
           <div class="price-item">
-            <p class="price-text">Стрижка Бороди</p>
-            <p class="price-text">50.000 сум</p>
+            <p class="price-text">Beard haircut</p>
+            <p class="price-text">50.000 sum</p>
           </div>
           <div class="price-item">
-            <p class="price-text">Моделирование бороди</p>
-            <p class="price-text">100.000 сум</p>
+            <p class="price-text">Beard modeling</p>
+            <p class="price-text">100.000 sum</p>
           </div>
           <div class="price-item">
-            <p class="price-text">Королевское бритё</p>
-            <p class="price-text">100.000 сум</p>
+            <p class="price-text">Royal shave</p>
+            <p class="price-text">100.000 sum</p>
           </div>
           <div class="price-item">
-            <p class="price-text">Депиляция контра бороди</p>
-            <p class="price-text">50.000 сум</p>
+            <p class="price-text">Contra beard depilation</p>
+            <p class="price-text">50.000 sum</p>
           </div>
           <div class="price-item">
-            <p class="price-text">Обшая Депиляция бороди</p>
-            <p class="price-text">100.000 сум</p>
+            <p class="price-text">General Beard Depilation</p>
+            <p class="price-text">100.000 sum</p>
           </div>
           <div class="price-item">
-            <p class="price-text">Чистак лица</p>
-            <p class="price-text">50.000 - 100.000 сум</p>
+            <p class="price-text">Clean faces</p>
+            <p class="price-text">50.000 - 100.000 sum</p>
           </div>
           <div class="price-item">
-            <p class="price-text">Укладка</p>
-            <p class="price-text">50.000 - 100.000 сум</p>
+            <p class="price-text">Laying</p>
+            <p class="price-text">50.000 - 100.000 sum</p>
           </div>
           <div class="price-item">
-            <p class="price-text">Окантовка</p>
-            <p class="price-text">50.000 сум</p>
+            <p class="price-text">Edging</p>
+            <p class="price-text">50.000 sum</p>
           </div>
           <div class="price-item">
-            <p class="price-text">Децкая стрижка до 10 лет </p>
-            <p class="price-text">50.000 сум</p>
+            <p class="price-text">Children's haircut up to 10 years old</p>
+            <p class="price-text">50.000 sum</p>
           </div>
           <div class="price-item">
-            <p class="price-text">с 10 лет</p>
-            <p class="price-text">70.000 сум</p>
+            <p class="price-text">from 10 years old</p>
+            <p class="price-text">70.000 sum</p>
           </div>
           <div class="price-item">
-            <p class="price-text">Рисунок</p>
-            <p class="price-text">25.000 - 50.000 сум</p>
+            <p class="price-text">Drawing</p>
+            <p class="price-text">25.000 - 50.000 sum</p>
           </div>
           <div class="price-item">
-            <p class="price-text">Папа+син 20% скидка</p>
-            <p class="price-text">150.000 сум</p>
+            <p class="price-text">Dad+son 20% discount</p>
+            <p class="price-text">150.000 sum</p>
           </div>
         </div>
       </div>
       
       <div class="about">
-        Разработчик COSINUS<br>
-        © ONE Barbershop <span id="currentYear"></span> все права защищены
+        Developed by COSINUS<br>
+        © ONE Barbershop <span id="currentYear"></span> all rights reserved
       </div>
     </div>
   </footer>
+</div>
   
   <!-- Site footer finish -->
   <!-- <script type="text/javascript" src="//w773195.alteg.io/widgetJS" charset="UTF-8"></script>
