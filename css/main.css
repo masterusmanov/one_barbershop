@@ -427,6 +427,7 @@ a {
   padding-left: 10px;
 }
 
+
 .site-logo {
   width: 150px;
 }
@@ -434,10 +435,23 @@ a {
 .site-header {
   padding-top: 50px;
   padding-bottom: 140px;
-  background-image: url(../images/web_bg_16.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
+
+/* ================================================================================== */
+video {
+  position: absolute;
+            top: 0;
+            left: 0;
+            width: 120%;
+            height: 100%;
+            object-fit: cover; /* Ensure the video covers the entire section */
+            z-index: -1; /* Place the video behind other content */
+
+ 
+}
+
 .headers{
   display: flex;
   justify-content: space-between;
@@ -607,19 +621,7 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  /* .youtube-wrapper {
-    display: grid;
-    justify-content: center;
-    gap: 50px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border: 1px solid white;
-
-  } */
-   
-
+  
   .youtube-text {
     font-size: 18px;
     margin: 0;
@@ -717,6 +719,14 @@ a {
 }
 
 @media only screen and (max-width: 900px) {
+  video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire section */
+  
+   
+  }
   
   .container {
     padding-right: 10px;
@@ -1081,4 +1091,35 @@ a {
   100% {
       opacity: 1;
   }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(38, 9, 104, 0.5);
+  z-index: 1;
+}
+
+/* Styles for the modal content */
+.modal-content {
+  background-color: #3E51F8;
+  width: 80%;
+  margin: 50% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Close button style */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }

@@ -11,16 +11,18 @@
 </head>
 <body>
   <!-- Site header start -->
-  <div class="dropdown absolute bg-blue-500 mt-10 mr-[10px]  rounded-xl" style="right: 0">
+  <div class="dropdown absolute z-50 fixed bg-blue-500 rounded-xl" style="right: 10px; top: 20px;">
     <select id="languageSelector" class="text-white bg-blue-500 py-1 px-2 text-[14px] outline-none">
       <option value="rus">Русский</option>
       <option value="uzb">Uzbek</option>
       <option value="eng">English</option>
     </select>
   </div>
+  
   <!-- language rus -->
   <div id="content-rus">
-    <header class="site-header">
+    <header class="site-header md:h-[700px] lg:h-[700px]">
+      <video id="myVideo" src="./images/video3.MOV" autoplay loop playsinline muted></video>
       <div class="container">
         <div class="headers">
         <img class="site-logo" src="images/barbershop_logo.png" alt="site logo" />
@@ -44,25 +46,61 @@
     <main>
       <section class="download">
         <div class="container">
-          <div class="download-wrapper">
-            <div class="download-phone-img"></div>
-            <div class="download-box">
-              <h2 class="download-title">
-                Установите специальное мобильное приложение для удобной
-                онлайн-записи
-              </h2>
-              <a
-              class="download-link"
-              href="#"
-              target="_blank"
-              >Google Play</a
-              >
-              <a
-              class="download-link download-link-ios"
-              href="#"
-              target="_blank"
-              >Apple Store</a
-              >
+          <div class="price-wrapper">
+            <div class="price">
+              <h2 class="price-title md:text-[32px] font-bold my-5">Наши сервисы</h2>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Стрижка волос</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">70.000 - 100.000 сум</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Стрижка Бороди</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">50.000 сум</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Моделирование бороди</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">100.000 сум</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Королевское бритё</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">100.000 сум</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Депиляция контра бороди</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">50.000 сум</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Обшая Депиляция бороди</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">100.000 сум</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Чистак лица</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">50.000 - 100.000 сум</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Укладка</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">50.000 - 100.000 сум</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Окантовка</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">50.000 сум</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Децкая стрижка до 10 лет </p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">50.000 сум</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">с 10 лет</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">70.000 сум</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Рисунок</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">25.000 - 50.000 сум</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Папа+син 20% скидка</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">150.000 сум</p>
+              </div>
             </div>
           </div>
         </div>
@@ -118,14 +156,14 @@
       <section class="py-10">
         <div class="container mx-auto">
           <h2 class="youtube-title-text2 my-5 text-[28px] md:text-[32px]">Шампуни и кондиционеры</h2>
-          <p class="youtube-title-text2 my-2">Ищете премиальные средства для ухода за волосами? Попробуйте нашу профессиональную линейку шампуней и кондиционеров, делающие ваши волосы красивее и здоровее.</p>
+          <p class="youtube-title-text2 w-[90%] font-[500] mx-auto my-5 text-[20px]">Ищете премиальные средства для ухода за волосами? Попробуйте нашу профессиональную линейку шампуней и кондиционеров, делающие ваши волосы красивее и здоровее.</p>
           <div class="flex flex-wrap justify-center items-center gap-4 mt-5">
             <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
               <img src="./images/morgans/1.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
               <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
                 <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">ШАМПУНИ И КОНДИЦИОНЕРЫ</p>
                 <h2 class="text-[14px] md:text-[18px] lg:text-[22px] text-gray-300 font-bold">Мужской шампунь</h2>
-                <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[42px] md:mt-[55px] lg:mt-[65px]">254.800 сум</p>
+                <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[40px] md:mt-[55px] lg:mt-[65px] ">254.800 сум</p>
               </div>
             </div>
             <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
@@ -144,7 +182,7 @@
                 <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold lg:mt-[35px]">655.200 сум</p>
               </div>
             </div>
-            <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
+            <div class="md:hidden lg:block pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
               <img src="./images/morgans/4.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
               <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
                 <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">ШАМПУНИ И КОНДИЦИОНЕРЫ</p>
@@ -152,7 +190,8 @@
                 <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[20px] md:mt-[25px] lg:mt-[35px]">257.400 сум</p>
               </div>
             </div>
-            <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
+
+            <!-- <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
               <img src="./images/morgans/5.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
               <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
                 <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">ШАМПУНИ И КОНДИЦИОНЕРЫ</p>
@@ -367,7 +406,10 @@
                 <h2 class="text-[14px] md:text-[18px] lg:text-[22px] text-gray-300 font-bold">Масло для ухода за волосами</h2>
                 <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[20px] md:mt-[25px] lg:mt-[65px]">247.000 сум</p>
               </div>
-            </div>            
+            </div>             -->
+          </div>
+          <div class="mt-10 flex justify-center">
+            <a class="bg-[#3e51f8]  text-white py-[20px] px-[100px] rounded-md" href="./pages/products.html" target="_blank">Увидеть все</a>
           </div>
         </div>
       </section>
@@ -419,64 +461,27 @@
     
     <footer class="footer">
       <div class="container">
-        <div class="price-wrapper">
-          <div class="price">
-            <h2 class="price-title">Наши сервисы</h2>
-            <div class="price-item">
-              <p class="price-text">Стрижка волос</p>
-              <p class="price-text">70.000 - 100.000 сум</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Стрижка Бороди</p>
-              <p class="price-text">50.000 сум</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Моделирование бороди</p>
-              <p class="price-text">100.000 сум</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Королевское бритё</p>
-              <p class="price-text">100.000 сум</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Депиляция контра бороди</p>
-              <p class="price-text">50.000 сум</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Обшая Депиляция бороди</p>
-              <p class="price-text">100.000 сум</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Чистак лица</p>
-              <p class="price-text">50.000 - 100.000 сум</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Укладка</p>
-              <p class="price-text">50.000 - 100.000 сум</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Окантовка</p>
-              <p class="price-text">50.000 сум</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Децкая стрижка до 10 лет </p>
-              <p class="price-text">50.000 сум</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">с 10 лет</p>
-              <p class="price-text">70.000 сум</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Рисунок</p>
-              <p class="price-text">25.000 - 50.000 сум</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Папа+син 20% скидка</p>
-              <p class="price-text">150.000 сум</p>
-            </div>
+        <div class="download-wrapper">
+          <div class="download-phone-img"></div>
+          <div class="download-box">
+            <h2 class="download-title">
+              Установите специальное мобильное приложение для удобной
+              онлайн-записи
+            </h2>
+            <a
+            class="download-link"
+            href="#"
+            target="_blank"
+            >Google Play</a
+            >
+            <a
+            class="download-link download-link-ios"
+            href="#"
+            target="_blank"
+            >Apple Store</a
+            >
           </div>
-        </div>
-        
+        </div>        
         <div class="about">
           Разработчик COSINUS<br>
           © ONE Barbershop <span id="currentYear"></span> все права защищены
@@ -487,22 +492,11 @@
 
   <!-- uzb -->
   <div id="content-uzb">
-    <header class="site-header">
+    <header class="site-header md:h-[700px] lg:h-[700px]">
+      <video id="myVideo" src="./images/video3.MOV" autoplay loop playsinline muted></video>
       <div class="container">
           <div class="headers">
               <img class="site-logo" src="../images/barbershop_logo.png" alt="site logo" />
-              <!-- <div class="dropdown">
-                <select id="languageSelector" class="text-red-600">
-                  <option value="uzb">Uzbek</option>
-                  <option value="rus">Русский</option>
-                  <option value="eng">English</option>
-                </select> -->
-                <!-- <a href="#" class="dropbtn">Til</a>
-                <div class="dropdown-content">
-                    <a href="../index.html">Rus</a>
-                    <a href="./eng.html">Eng</a>
-                </div> -->
-              <!-- </div> -->
               </div>
         <h1 class="hero-title">
           barbershop
@@ -523,24 +517,61 @@
     <main>
       <section class="download">
         <div class="container">
-          <div class="download-wrapper">
-            <div class="download-phone-img"></div>
-            <div class="download-box">
-              <h2 class="download-title">
-                  Qulay onlayn ro'yxatdan o'tish uchun maxsus mobil ilovani o'rnating
-              </h2>
-              <a
-              class="download-link"
-              href="#"
-              target="_blank"
-              >Google Play</a
-              >
-              <a
-              class="download-link download-link-ios"
-              href="#"
-              target="_blank"
-              >Apple Store</a
-              >
+          <div class="price-wrapper">
+            <div class="price">
+              <h2 class="price-title md:text-[32px] font-bold my-5">Bizning xizmatlarimiz</h2>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Soch kesish</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">70.000 - 100.000 so'm</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Soqol soch turmagi</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">50.000 so'm</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Soqolni modellashtirish</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">100.000 so'm</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Qirol soqol</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">100.000 so'm</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Soqol depilatsiyalash</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">50.000 so'm</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Umumiy soqol depilyatsiyasi</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">100.000 so'm</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Yuzlarni tozalash</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">50.000 - 100.000 so'm</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Ukladka</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">50.000 - 100.000 so'm</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Kantofka qilish</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">50.000 so'm</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">10 yoshgacha bo'lgan bolalarning soch turmagi</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">50.000 so'm</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">10 yoshdan boshlab</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">70.000 so'm</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Chizma</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">25.000 - 50.000 so'm</p>
+              </div>
+              <div class="price-item">
+                <p class="price-text md:text-[16px] lg:text-[24px]">Ota+o'g'il 20% chegirma</p>
+                <p class="price-text md:text-[16px] lg:text-[24px]">150.000 so'm</p>
+              </div>
             </div>
           </div>
         </div>
@@ -596,9 +627,9 @@
       <section class="py-10">
         <div class="container mx-auto">
           <h2 class="youtube-title-text2 my-5 text-[28px] md:text-[32px]">Shampunlar va konditsionerlar</h2>
-          <p class="youtube-title-text2 my-2">Premium sochni parvarish qilish mahsulotlarini qidiryapsizmi? Sochingizni chiroyli va sog'lom qiladigan shampun va konditsionerlarning professional qatorini sinab ko'ring.</p>
+          <p class="youtube-title-text2 w-[90%] font-[500] mx-auto my-5 text-[20px]">Premium sochni parvarish qilish mahsulotlarini qidiryapsizmi? Sochingizni chiroyli va sog'lom qiladigan shampun va konditsionerlarning professional qatorini sinab ko'ring.</p>
           <div class="flex flex-wrap justify-center items-center gap-4 mt-5">
-            <div class="py-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
+            <div class="w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
               <img src="./images/morgans/1.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
               <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
                 <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">SHAMPUNLAR VA KONDITSIONERLAR</p>
@@ -606,7 +637,7 @@
                 <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[25px] md:mt-[30px] lg:mt-[65px]">254.800 so'm</p>
               </div>
             </div>
-            <div class="py-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
+            <div class=" w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
               <img src="./images/morgans/2.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
               <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
                 <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">SHAMPUNLAR VA KONDITSIONERLAR</p>
@@ -614,7 +645,7 @@
                 <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[5px] md:mt-0">257.400 so'm</p>
               </div>
             </div>
-            <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
+            <div class="w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
               <img src="./images/morgans/3.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
               <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
                 <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">SHAMPUNLAR VA KONDITSIONERLAR</p>
@@ -622,7 +653,7 @@
                 <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold md:mt-[30px] lg:mt-[35px]">655.200 so'm</p>
               </div>
             </div>
-            <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
+            <div class="md:hidden lg:block w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
               <img src="./images/morgans/4.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
               <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
                 <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">SHAMPUNLAR VA KONDITSIONERLAR</p>
@@ -630,7 +661,7 @@
                 <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[20px] md:mt-[25px] lg:mt-[35px]">257.400 so'm</p>
               </div>
             </div>
-            <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
+            <!-- <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
               <img src="./images/morgans/5.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
               <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
                 <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">SHAMPUNLAR VA KONDITSIONERLAR</p>
@@ -845,9 +876,10 @@
                 <h2 class="text-[14px] md:text-[18px] lg:text-[22px] text-gray-300 font-bold">Sochni parvarish qilish uchun moy</h2>
                 <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[25px] md:mt-[25px] lg:mt-[35px]">247.000 so'm</p>
               </div>
-            </div>
-
-            
+            </div> -->
+          </div>
+          <div class="mt-10 flex justify-center">
+            <a class="bg-[#3e51f8]  text-white py-[20px] px-[100px] rounded-md" href="./pages/products.html" target="_blank">Barchasini ko'rish</a>
           </div>
         </div>
       </section>
@@ -890,64 +922,26 @@
     
     <footer class="footer">
       <div class="container">
-        <div class="price-wrapper">
-          <div class="price">
-            <h2 class="price-title">Bizning xizmatlarimiz</h2>
-            <div class="price-item">
-              <p class="price-text">Soch kesish</p>
-              <p class="price-text">70.000 - 100.000 so'm</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Soqol soch turmagi</p>
-              <p class="price-text">50.000 so'm</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Soqolni modellashtirish</p>
-              <p class="price-text">100.000 so'm</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Qirol soqol</p>
-              <p class="price-text">100.000 so'm</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Soqol depilatsiyalash</p>
-              <p class="price-text">50.000 so'm</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Umumiy soqol depilyatsiyasi</p>
-              <p class="price-text">100.000 so'm</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Yuzlarni tozalash</p>
-              <p class="price-text">50.000 - 100.000 so'm</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Ukladka</p>
-              <p class="price-text">50.000 - 100.000 so'm</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Kantofka qilish</p>
-              <p class="price-text">50.000 so'm</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">10 yoshgacha bo'lgan bolalarning soch turmagi</p>
-              <p class="price-text">50.000 so'm</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">10 yoshdan boshlab</p>
-              <p class="price-text">70.000 so'm</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Chizma</p>
-              <p class="price-text">25.000 - 50.000 so'm</p>
-            </div>
-            <div class="price-item">
-              <p class="price-text">Ota+o'g'il 20% chegirma</p>
-              <p class="price-text">150.000 so'm</p>
-            </div>
+        <div class="download-wrapper">
+          <div class="download-phone-img"></div>
+          <div class="download-box">
+            <h2 class="download-title">
+                Qulay onlayn ro'yxatdan o'tish uchun maxsus mobil ilovani o'rnating
+            </h2>
+            <a
+            class="download-link"
+            href="#"
+            target="_blank"
+            >Google Play</a
+            >
+            <a
+            class="download-link download-link-ios"
+            href="#"
+            target="_blank"
+            >Apple Store</a
+            >
           </div>
-        </div>
-        
+        </div>        
         <div class="about">
           COSINUS tomonidan ishlab chiqilgan<br>
           © ONE Barbershop <span id="currentYear"></span> barcha huquqlar himoyalangan
@@ -958,7 +952,8 @@
 
   <!-- eng -->
   <div id="content-eng">
-    <header class="site-header">
+    <header class="site-header md:h-[700px] lg:h-[700px]">
+      <video id="myVideo" src="./images/video3.MOV" autoplay loop playsinline muted></video>
     <div class="container">
         <div class="headers">
             <img class="site-logo" src="../images/barbershop_logo.png" alt="site logo" />
@@ -982,24 +977,61 @@
   <main>
     <section class="download">
       <div class="container">
-        <div class="download-wrapper">
-          <div class="download-phone-img"></div>
-          <div class="download-box">
-            <h2 class="download-title">
-              Install a special mobile application for convenient online registration
-            </h2>
-            <a
-            class="download-link"
-            href="#"
-            target="_blank"
-            >Google Play</a
-            >
-            <a
-            class="download-link download-link-ios"
-            href="#"
-            target="_blank"
-            >Apple Store</a
-            >
+        <div class="price-wrapper">
+          <div class="price">
+            <h2 class="price-title md:text-[32px] font-bold my-5">Our services</h2>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">Haircut</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">70.000 - 100.000 sum</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">Beard haircut</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">50.000 sum</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">Beard modeling</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">100.000 sum</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">Royal shave</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">100.000 sum</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">Contra beard depilation</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">50.000 sum</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">General Beard Depilation</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">100.000 sum</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">Clean faces</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">50.000 - 100.000 sum</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">Laying</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">50.000 - 100.000 sum</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">Edging</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">50.000 sum</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">Children's haircut up to 10 years old</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">50.000 sum</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">from 10 years old</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">70.000 sum</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">Drawing</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">25.000 - 50.000 sum</p>
+            </div>
+            <div class="price-item">
+              <p class="price-text md:text-[16px] lg:text-[24px]">Dad+son 20% discount</p>
+              <p class="price-text md:text-[16px] lg:text-[24px]">150.000 sum</p>
+            </div>
           </div>
         </div>
       </div>
@@ -1055,9 +1087,9 @@
     <section class="py-10">
       <div class="container mx-auto">
         <h2 class="youtube-title-text2 my-5 text-[28px] md:text-[32px]">Shampoos & Conditioners</h2>
-        <p class="youtube-title-text2 my-2">Looking for premium hair care products? Try our professional line of shampoos and conditioners that make your hair beautiful and healthy.</p>
+        <p class="youtube-title-text2 w-[70%] font-[500] mx-auto my-5 text-[20px]">Looking for premium hair care products? Try our professional line of shampoos and conditioners that make your hair beautiful and healthy.</p>
         <div class="flex flex-wrap justify-center items-center gap-4 mt-5">
-          <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
+          <div class="w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
             <img src="./images/morgans/1.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
             <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
               <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">SHAMPOOS AND CONDITIONERS</p>
@@ -1065,7 +1097,7 @@
               <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[35px] md:mt-[55px] lg:mt-[65px]">254.800 sum</p>
             </div>
           </div>
-          <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
+          <div class="w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
             <img src="./images/morgans/2.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
             <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
               <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">SHAMPOOS AND CONDITIONERS</p>
@@ -1073,7 +1105,7 @@
               <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[15px] md:mt-[30px]">257.400 sum</p>
             </div>
           </div>
-          <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
+          <div class="w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
             <img src="./images/morgans/3.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
             <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
               <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">SHAMPOOS AND CONDITIONERS</p>
@@ -1081,7 +1113,7 @@
               <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold md:mt-[30px] lg:mt-[35px]">655.200 sum</p>
             </div>
           </div>
-          <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
+          <div class="md:hidden lg:block w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
             <img src="./images/morgans/4.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
             <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
               <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">SHAMPOOS AND CONDITIONERS</p>
@@ -1089,7 +1121,7 @@
               <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[20px] md:mt-[25px] lg:mt-[35px]">257.400 sum</p>
             </div>
           </div>
-          <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
+          <!-- <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
             <img src="./images/morgans/5.jpg" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
             <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
               <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">SHAMPOOS AND CONDITIONERS</p>
@@ -1297,14 +1329,17 @@
               <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[25px] md:mt-[25px] lg:mt-[65px]">182.000 sum</p>
             </div>
           </div>
-          <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500"b
+          <div class="pb-2 w-[150px] md:w-[200px] lg:w-[300px] grid justify-center items-center text-white bg-gray-900 rounded-lg shadow-md shadow-blue-500">
             <img src="./images/morgans/29.png" alt="image" class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-t-lg object-cover">
             <div class="text-center py-2 md:h-[140px] lg:h-[180px]">
               <p class="text-[10px] lg:text-[14px] text-gray-500 font-bold">SHAMPOOS AND CONDITIONERS</p>
               <h2 class="text-[14px] md:text-[18px] lg:text-[22px] text-gray-300 font-bold">Hair care oil</h2>
               <p class="text-[14px] md:text-[20px] lg:text-[28px] text-gray-300 font-bold mt-[30px] md:mt-[50px] lg:mt-[65px]">247.000 sum</p>
             </div>
-          </div>            
+          </div>             -->
+        </div>
+        <div class="mt-10 flex justify-center">
+          <a class="bg-[#3e51f8]  text-white py-[20px] px-[100px] rounded-md" href="./pages/products.html" target="_blank">See all</a>
         </div>
       </div>
     </section>
@@ -1349,64 +1384,26 @@
   
   <footer class="footer">
     <div class="container">
-      <div class="price-wrapper">
-        <div class="price">
-          <h2 class="price-title">Our services</h2>
-          <div class="price-item">
-            <p class="price-text">Haircut</p>
-            <p class="price-text">70.000 - 100.000 sum</p>
-          </div>
-          <div class="price-item">
-            <p class="price-text">Beard haircut</p>
-            <p class="price-text">50.000 sum</p>
-          </div>
-          <div class="price-item">
-            <p class="price-text">Beard modeling</p>
-            <p class="price-text">100.000 sum</p>
-          </div>
-          <div class="price-item">
-            <p class="price-text">Royal shave</p>
-            <p class="price-text">100.000 sum</p>
-          </div>
-          <div class="price-item">
-            <p class="price-text">Contra beard depilation</p>
-            <p class="price-text">50.000 sum</p>
-          </div>
-          <div class="price-item">
-            <p class="price-text">General Beard Depilation</p>
-            <p class="price-text">100.000 sum</p>
-          </div>
-          <div class="price-item">
-            <p class="price-text">Clean faces</p>
-            <p class="price-text">50.000 - 100.000 sum</p>
-          </div>
-          <div class="price-item">
-            <p class="price-text">Laying</p>
-            <p class="price-text">50.000 - 100.000 sum</p>
-          </div>
-          <div class="price-item">
-            <p class="price-text">Edging</p>
-            <p class="price-text">50.000 sum</p>
-          </div>
-          <div class="price-item">
-            <p class="price-text">Children's haircut up to 10 years old</p>
-            <p class="price-text">50.000 sum</p>
-          </div>
-          <div class="price-item">
-            <p class="price-text">from 10 years old</p>
-            <p class="price-text">70.000 sum</p>
-          </div>
-          <div class="price-item">
-            <p class="price-text">Drawing</p>
-            <p class="price-text">25.000 - 50.000 sum</p>
-          </div>
-          <div class="price-item">
-            <p class="price-text">Dad+son 20% discount</p>
-            <p class="price-text">150.000 sum</p>
-          </div>
+      <div class="download-wrapper">
+        <div class="download-phone-img"></div>
+        <div class="download-box">
+          <h2 class="download-title">
+            Install a special mobile application for convenient online registration
+          </h2>
+          <a
+          class="download-link"
+          href="#"
+          target="_blank"
+          >Google Play</a
+          >
+          <a
+          class="download-link download-link-ios"
+          href="#"
+          target="_blank"
+          >Apple Store</a
+          >
         </div>
-      </div>
-      
+      </div>      
       <div class="about">
         Developed by COSINUS<br>
         © ONE Barbershop <span id="currentYear"></span> all rights reserved
